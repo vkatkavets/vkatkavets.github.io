@@ -1,0 +1,409 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+}
+
+.container {
+    width: 90%;
+    /* max-width: 1200px; */
+    margin: 0 auto;
+}
+
+.header {
+    /* padding: 30px 0; */
+    height: 100vh;
+    background-color: #ffbf69;
+}   
+
+.header__container {
+    height: 100%;
+    background-image: url("./images/background.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.header__first-part {
+    padding: 35px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.logo {
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.header__logo {
+    color: #333;
+}
+
+.nav {
+    display: flex;
+    gap: 80px;
+}
+
+.nav__link {
+    text-decoration: none;
+    color: #333;
+}
+
+.header__second-part {
+    max-width: 600px;
+    padding: 100px 0;
+    color: #fff;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100%;
+    gap: 50px; */
+}
+
+.header__title {
+    font-size: 150px;
+    font-weight: 900;
+    margin-bottom: 20px;
+    line-height: 1;
+}
+
+.header__text {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 85px;
+}
+
+.header__button {
+    background: #cbf3f0;
+    border: none;
+    font-size: 24px;
+    font-weight: bold;
+    padding: 22px 80px;
+    letter-spacing: 1px;
+    cursor: pointer;   
+}
+
+.about {
+    padding: 80px 0;
+    text-align: center;
+}
+
+.about__title {
+    font-size: 26px;
+    font-weight: 900;
+    margin-bottom: 20px;
+}
+
+.about__text {
+    max-width: 840px;
+    margin: 0 auto;
+    /* font-size: 18px; */
+    line-height: 1.5;
+}
+
+.products {
+    padding: 80px 0;
+    text-align: center;
+    background: #cbf3f0;
+}
+
+.products__title {
+    font-size: 26px;
+    font-weight: 900;
+    margin-bottom: 40px;
+}
+
+.products__list {
+    display: flex;
+    justify-content: space-around;
+}
+
+.product-card {
+    width: 100%;
+    max-width: 240px;
+}
+
+.product-card__image {
+    width: 60%;
+}
+
+.product-card__title {
+    font-size: 16px;
+    margin: 20px 0;
+}
+
+.product-card__button {
+    /* display: inline-block; */
+    background: #ffbf69;
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 28px;
+    letter-spacing: 0.5px;
+    cursor: pointer;    
+}
+
+.rules {
+    padding: 80px 0;
+    background-image: url("./images/bg-grid.png");
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: 85%;
+}
+
+.rules__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    /* flex-wrap: wrap; */
+}
+
+.rules__title {
+    font-size: 26px;
+    font-weight: 900;
+    margin-bottom: 20px;
+}
+
+.rules__text {
+    max-width: 665px;
+    /* font-size: 18px; */
+    /* line-height: 1.5; */
+}
+
+.rules__image {
+    width: 450px;
+}
+
+.footer {
+    background: #333; 
+    padding: 40px 0;
+}
+
+.footer__links {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer__link {
+    text-decoration: none;
+    color: #fff;
+}
+
+@media (max-width: 1024px) {
+    .nav {
+        gap: 60px;
+    }
+
+    .header__second-part{
+        max-width: 450px;
+    }
+
+    .header__title {
+        font-size: 100px; /* 120px */
+    }
+    
+    .products__list {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    
+    .rules {
+        background-size: 100%;
+    }
+
+    .rules__image {
+        width: 400px;
+    }
+}
+
+@media (max-width: 768px) {
+    .header {
+        height: 100%;
+    }
+
+    .header__first-part{
+        padding: 20px 0;
+        font-size: 16px;
+    }
+
+    .logo {
+        font-size: 16px;
+    }
+
+    .nav {
+        gap: 40px;
+    }
+
+    .header__second-part{
+        max-width: 300px;
+    }
+
+    .header__title {
+        font-size: 70px;
+    }
+    
+    .header__text {
+        font-size: 20px;
+    }
+
+    .header__button {
+        font-size: 20px;
+        padding: 11px 40px;
+    }
+
+    .products__list {
+        flex-direction: column;
+        align-items: center;
+        /* gap: 15px; */
+    }
+
+    .product-card {
+        max-width: 80%;
+    }
+
+    .rules {
+        /* background-size: contain; */
+        background-position: center;
+    }
+
+    .rules__container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .rules__text {
+        max-width: 100%;
+    }
+
+    .rules__image {
+        width: 300px;
+    }
+}
+
+@media (max-width: 576px) {
+    .header__first-part {
+        flex-direction: column;
+        /* text-align: center; */
+    }
+
+    .nav {
+        width: 100%;
+        justify-content: space-between;
+        gap: 0;
+    }
+
+    .nav__link {
+        margin: 15px 0;
+    }
+
+    .header__second-part {
+        max-width: 250px;
+        padding: 50px 0;
+        /* max-width: 100%; */
+        /* text-align: center; */
+    }
+
+    .header__title {
+        font-size: 50px;
+    }
+
+    .header__text {
+        font-size: 16px;
+    }
+
+    .header__button {
+        padding: 8px 20px;
+        font-size: 16px;
+    }
+
+    .product-card {
+        max-width: 100%;
+    }
+
+    .about__title, 
+    .products__title, 
+    .rules__title {
+        font-size: 22px;
+    }
+
+    .about__text,
+    .product-card__title,
+    .product-card__button,
+    .rules__text {
+        font-size: 14px;
+    }
+
+    .rules__text {
+        /* max-width: 100%; */
+        /* font-size: 16px; */
+    }
+
+    .footer__links {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .footer__link:not(:first-child){
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 320px) {
+    .nav__link {
+        margin: 5px 0;
+    }
+
+    .header__second-part {
+        padding: 30px 0;
+    }
+
+    .header__title {
+        font-size: 40px;
+    }
+
+    .header__text {
+        font-size: 14px;
+    }
+
+    .header__button {
+        padding: 6px 16px;
+        font-size: 14px;
+    }
+
+    .about__title,
+    .products__title,
+    .rules__title {
+        font-size: 18px;
+    }
+
+    .about__text,
+    .product-card__title,
+    .product-card__button,
+    .rules__text {
+        font-size: 12px;
+    }
+
+    .product-card {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .rules__image {
+        width: 220px;
+    }
+
+    .footer__link:not(:first-child){
+        font-size: 12px;
+    }
+}
